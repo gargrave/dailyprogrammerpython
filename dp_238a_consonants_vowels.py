@@ -7,14 +7,6 @@ vowels = 'aeuoi'
 cons = 'bcdfghjklmnpqrstvwxyz'
 
 
-def print_title(num, title):
-    print('==============================')
-    print('Daily Programmer #{}'.format(num))
-    print('{}'.format(title))
-    print('==============================')
-    dp_utils.test()
-
-
 def get_vowel():
     return random.choice(vowels)
 
@@ -40,7 +32,7 @@ def convert(in_word):
 
 
 def main():
-    print_title('238a', 'Consonants & Vowels')
+    dp_utils.print_title('238a', 'Consonants & Vowels')
     print(convert('cvcvcc'))
     print(convert('CcvV'))
     print(convert('cvcvcvcvcvcvcvcvcvcv'))
