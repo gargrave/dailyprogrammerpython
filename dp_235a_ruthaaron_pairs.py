@@ -1,3 +1,6 @@
+import dp_utils
+
+
 def get_prime_factors(num):
     factors = set()
     i = 2
@@ -15,8 +18,9 @@ def test_pair(pair):
 
 
 def main():
+    dp_utils.print_title('235a', 'Ruth-Aaron Pairs')
     pairs = []
-    with open('input.txt', 'r') as file:
+    with open('dp_235a_ruthaaron_pairs.txt', 'r') as file:
         # read the first line to get the number of pairs to test
         lines = int(file.readline())
         for _ in range(lines):
