@@ -14,7 +14,7 @@ def increment(num):
         offset = 1
     elif (num - 1) % 3 == 0:
         offset = -1
-    return int((num + offset) / 3), offset
+    return (num + offset) // 3, offset
 
 
 def run(num):
